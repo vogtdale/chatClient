@@ -10,7 +10,7 @@ const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const Endpoint = "https://chatserverapp.glitch.me/";
+  const Endpoint = 'https://chatserverapp.glitch.me/';
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
